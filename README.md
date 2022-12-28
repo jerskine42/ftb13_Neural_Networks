@@ -106,20 +106,29 @@ To do so, complete the following steps:
         * Dropout layer
         * Layer 2 has 29 nodes, 1/2 of the number nodes in layer 1
         * Layer 3 has 15 nodes, 1/2 of the number nodes in layer 2
+&nbsp;  
+    
     2. Create a deep neural network by assigning the number of input features, the number of layers, and the number of neurons on each layer using Tensorflow’s Keras.  
         * Model Definition: ![Load](images/S3A12a_Model_A1.png)  
+&nbsp;  
+    
     3. Compile and fit the model using the `binary_crossentropy` loss function, the `adam` optimizer, and the `accuracy` evaluation metric.
         * Compile Model:![Load Credit Data](images/S3A13a_Compile_Model_A1.png) 
         * Fit Model:![Load Credit Data](images/S3A13b_Fit_Model_A1.png) 
+&nbsp;  
+    
     4. Evaluate the model using the test data to determine the model’s loss and accuracy.
         * Model Results: ![Load](images/S3A14a_Model_Results.png)  
         * Model Loss: ![Load](images/S3A14b_Model_Loss.png)  
         * Model Accuracy: ![Load](images/S3A14c_Model_Accuracy.png)  
+&nbsp;  
+> **Recomendation:** About 50 epochs apears to be optimal
+&nbsp;      
     5. Save and export your model to an HDF5 file, and name the file `AlphabetSoup.h5`.
         * HDF5 File: [Alternate Model 1](data/AlphabetSoup_A1.h5)
         * Save an export file: ![Load](images/S3A15a_Export_Model_A1_HDF.png)  
+  
 
-> **Recomendation:** About 40 epochs apears to be optimal
 &nbsp;  
 * **Alterante Model2:**  
     1. Modeling - Feature Engineering  
@@ -151,6 +160,8 @@ To do so, complete the following steps:
         * Model Loss: ![Load](images/S3A24b_Model_Loss.png)  
         * Model Accuracy: ![Load](images/S3A24c_Model_Accuracy.png)  
 &nbsp;  
+> **Recomendation:** About 50 epochs apears to be optimal
+&nbsp;      
 
     5. Save and export your model to an HDF5 file, and name the file `AlphabetSoup.h5`.
         * HDF5 File: [Alternate Model 1](data/AlphabetSoup_A2.h5)
@@ -168,8 +179,8 @@ To do so, complete the following steps:
 &nbsp;  
   
 3. Save each of your models as an HDF5 file.
-    | Model Link | Numeric Features | Catigorical Encoded | Hidden Layers | Nodes | Parameters |Loss | Accuracy |  
-    | ---------- | ---------------- | ------------------- | ------------- | ----- | -----------|---- | -------- |  
+    | Model Link (HDF5) | Numeric Features | Catigorical Encoded | Hidden Layers | Nodes | Parameters |Loss | Accuracy |  
+    | ----------------- | ---------------- | ------------------- | ------------- | ----- | -----------|---- | -------- |  
     | [Origional Model](data/AlphabetSoup.h5) | 2 | 114 |  2 | 58, 29 | 8,527 | 0.5532 | 0.7284 |     
     | [Alternate Model 1](data/AlphabetSoup_A1.h5) | 2 | 114 | 3 | 58, 29, 15 | 8,963 | 0.5551 | 0.7279 |  
     | [Alternate Model 2](data/AlphabetSoup_A2.h5) | 0 | 106 | 2 | 53, 27 | 1,463  | 0.5590 | 0.7271 |   
